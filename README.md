@@ -5,7 +5,8 @@ Your one-stop catering & food-ordering web experience
 RasoiSe is a feature-rich, responsive catering and food-ordering platform built as part of a project submission. It allows users to explore menus, book packages, manage carts, place orders, and even simulate vendor interactions — all in a seamless, elegant interface with Firebase Authentication integrated.
 
 🔗 Live Website
-🔸 Click here to explore RasoiSe https://shwetachandra19.github.io/RasoiSe/
+ https://shwetachandra19.github.io/RasoiSe/
+🔸 Click here to explore RasoiSe 
 
 🌟 Features
 🔐 Firebase Authentication
