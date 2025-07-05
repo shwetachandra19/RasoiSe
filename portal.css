@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #d7f9e9, #fdf5dc);
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 12px 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f4f4f4;
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active-link {
+  color: #facc6b;
+  font-weight: 500;
+}
+
+.vendor-portal {
+  max-width: 500px;
+  margin: 8rem auto;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.vendor-heading {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.vendor-subtext {
+  text-align: center;
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.vendor-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.vendor-form input,
+.vendor-form select {
+  padding: 10px 14px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.vendor-form input:focus,
+.vendor-form select:focus {
+  border-color: #7dd87d;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(125, 216, 125, 0.2);
+}
+
+.submit-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+
+.toast-message {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #3ecf8e;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  z-index: 1000;
+}
+
+.toast-message.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 18px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  font-size: 0.95rem;
+  color: #2e4e37;
+  box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 40px;
+}
+
+/* ------------------------------------------
+   🔁 Responsive Design for Small Devices
+------------------------------------------ */
+@media (max-width: 480px) {
+
+    .navbar {
+    height: auto;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 14px;
+    justify-content: flex-start;
+    padding: 6px 10px;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+
+  .nav-links a {
+    font-size: 0.95rem;
+    white-space: nowrap;
+  }
+
+
+  .vendor-container {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .vendor-heading {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  form label {
+    font-size: 0.9rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  .vendor-submit-btn {
+    font-size: 1rem;
+    padding: 10px 16px;
+    width: 100%;
+  }
+
+  .toast-message {
+    width: 90%;
+    font-size: 0.9rem;
+    bottom: 20px;
+    left: 5%;
+  }
+}
+

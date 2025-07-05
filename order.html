@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Placed</title>
+  <link rel="stylesheet" href="order.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" />
+</head>
+<body>
+
+    <!-- 🔝 Navbar -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="home.html"><i class="bx bx-home"></i> Home</a></li>
+      <li><a href="product.html"><i class="bx bx-food-menu"></i> Products</a></li>
+      <li><a href="package.html"><i class="bx bx-gift"></i> Packages</a></li>
+      <li><a href="cart.html"><i class="bx bx-cart-alt"></i> Cart</a></li>
+      <li><a href="order.html"><i class="bx bx-box"></i> My Orders</a></li>
+      <li><a href="review.html"><i class="bx bx-star"></i> Reviews</a></li>
+      <li><a href="profile.html"><i class="bx bx-user"></i> Profile</a></li>
+      <li><a href="portal.html"><i class="bx bx-id-card"></i> Vendor Portal</a></li>
+      <li><a href="index.html" onclick="logout()"><i class="bx bx-log-out"></i> Logout</a></li>
+    </ul>
+  </nav>
+
+  <section class="order-section">
+    <h1 class="order-heading">🧾 Order Summary</h1>
+
+    <div id="orderItems" class="order-items-container">
+      <!-- Items will be injected here via JS -->
+    </div>
+
+    <div class="total-order-amount">
+      <h3>Total: <span id="orderTotal">₹0</span></h3>
+    </div>
+
+    <div class="order-form">
+      <h2>📦 Delivery Details</h2>
+      <input type="email" id="email" placeholder="Your Email" required />
+      <input type="tel" id="phone" placeholder="Phone Number" required />
+      <textarea id="address" rows="3" placeholder="Delivery Address" required></textarea>
+      <button id="placeOrderBtn">Place Order</button>
+    </div>
+
+    <div id="thankYouBox" class="thank-you-box" style="display: none;">
+      <h2>🎉 Thank You!</h2>
+      <p>Your order has been placed successfully.</p>
+      <p>This marks the completion of the <strong>RasoiSe</strong> project. Hope you enjoyed the experience! 🌟</p>
+    </div>
+  </section>
+
+   <footer class="site-footer">
+        <p>© 2025 <strong>RasoiSe</strong> — Taste That Tells a Story 🫶</p>
+       </footer>
+
+  <script src="order.js"></script>
+
+  
+</body>
+</html>

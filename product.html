@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RasoiSe | Menu</title>
+    <link rel="stylesheet" href="product.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" />
+</head>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+<body>
+
+     <!-- 🔝 Navbar -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="home.html"><i class="bx bx-home"></i> Home</a></li>
+      <li><a href="product.html"><i class="bx bx-food-menu"></i> Products</a></li>
+      <li><a href="package.html"><i class="bx bx-gift"></i> Packages</a></li>
+      <li><a href="cart.html"><i class="bx bx-cart-alt"></i> Cart</a></li>
+      <li><a href="order.html"><i class="bx bx-box"></i> My Orders</a></li>
+      <li><a href="review.html"><i class="bx bx-star"></i> Reviews</a></li>
+      <li><a href="profile.html"><i class="bx bx-user"></i> Profile</a></li>
+      <li><a href="portal.html"><i class="bx bx-id-card"></i> Vendor Portal</a></li>
+      <li><a href="index.html" onclick="logout()"><i class="bx bx-log-out"></i> Logout</a></li>
+    </ul>
+  </nav>
+
+   <section class="product-section">
+    <h1 class="section-heading">🌿 Explore Our Premium Veg Delights</h1>
+
+    <!-- Filter and Sort -->
+    <div class="filter-sort-bar">
+      <select id="categoryFilter">
+        <option class="filter-btn" value="all">All Categories</option>
+        <option class="filter-btn" value="starters">Starters</option>
+        <option class="filter-btn" value="main-course">Main-Course</option>
+        <option class="filter-btn" value="Breads">Breads</option>
+        <option class="filter-btn" value="desserts">Desserts</option>
+        <option class="filter-btn" value="drinks">Drinks</option>
+      </select>
+
+      <select id="sortPrice">
+        <option value="default">Sort by Price</option>
+        <option value="low">Low to High</option>
+        <option value="high">High to Low</option>
+      </select>
+    </div>
+
+    <!-- Grid -->
+    <div class="product-grid">
+      <div class="product-card" data-category="Starters" data-price="220">
+        <img src="menu/starter1.jpg" alt="Hara Bhara Kabab" />
+        <h3>Paneer Tikka</h3>
+        <p class="price" data-price="220">₹220</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+      </div>
+
+      <div class="product-card " data-category="Starters" data-price="210">
+        <img src="menu/starter2.jpeg" alt="Dahi Ke Kabab" />
+        <h3>Dahi Ke Kabab</h3>
+        <p class="price" data-price="210">₹210</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+      </div>
+
+      <div class="product-card " data-category="Starters" data-price="240">
+        <img src="menu/starter3.jpeg" alt="Cheese Corn Balls" />
+        <h3>Cheese Corn Balls</h3>
+        <p class="price" data-price="240">₹240</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+      </div>
+
+      <div class="product-card " data-category="Starters" data-price="270">
+        <img src="menu/starter4.jpg" alt="Paneer Tikka" />
+        <h3>Paneer Tikka</h3>
+        <p class="price" data-price="270">₹270</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+      </div>
+
+      <div class="product-card " data-category="Starters" data-price="190">
+        <img src="menu/starter5.jpeg" alt="Aalo Tikka" />
+        <h3>Aalo Tikka</h3>
+        <p class="price" data-price="190">₹190</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+      </div>
+
+      <div class="product-card " data-category="Starters" data-price="240">
+        <img src="menu/starter6.jpg" alt="Spring Rolls" />
+        <h3>Spring Rolls</h3>
+        <p class="price" data-price="240">₹240</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+      </div>
+
+      <div class="product-card " data-category="Main-Course" data-price="360">
+        <img src="menu/main-course1.jpeg" alt="Methi Matar Paneer" />
+        <h3>Methi Matar Paneer</h3>
+        <p class="price" data-price="360">₹360</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+      </div>
+
+       <div class="product-card " data-category="Main-Course" data-price="340">
+        <img src="menu/main-course2.jpeg" alt="Kadhai Paneer" />
+        <h3>Kadhai Paneer</h3>
+        <p class="price" data-price="340">₹340</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+      </div>
+
+      <div class="product-card " data-category="Main-Course" data-price="370">
+        <img src="menu/main-course3.jpeg" alt="Dal Makhani" />
+        <h3>Dal Makhani</h3>
+        <p class="price" data-price="370">₹370</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+      </div>
+
+      <div class="product-card " data-category="Main-Course" data-price="350">
+        <img src="menu/main-course4.jpeg" alt="Malai Kofta" />
+        <h3>Malai Kofta</h3>
+        <p class="price" data-price="350">₹350</p>
+        <i  id="navCartIcon"class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+      </div>
+
+      <div class="product-card " data-category="Main-Course" data-price="390">
+        <img src="menu/main-course5.jpeg" alt="Paneer Butter Masala" />
+        <h3>Paneer Butter Masala</h3>
+        <p class="price" data-price="390">₹390</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+      </div>
+
+      <div class="product-card " data-category="Main-Course" data-price="310">
+        <img src="menu/main-course6.jpeg" alt="Mix Veg" />
+        <h3>Mix Veg</h3>
+        <p class="price" data-price="310">₹310</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+      </div>
+
+       <div class="product-card " data-category="Breads" data-price="85">
+        <img src="menu/bread1.jpeg" alt="Butter Naan" />
+        <h3>Butter Naan</h3>
+        <p class="price" data-price="85">₹85</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+      </div>
+
+      <div class="product-card " data-category="Breads" data-price="90">
+        <img src="menu/bread2.jpeg" alt="Butter Garlic Naan" />
+        <h3>Butter Garlic Naan</h3>
+        <p class="price" data-price="90">₹90</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+      </div>
+
+      <div class="product-card " data-category="Breads" data-price="100">
+        <img src="menu/bread3.jpeg" alt="Cheese Naan" />
+        <h3>Cheese Naan</h3>
+        <p class="price" data-price="100">₹100</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+      </div>
+
+      <div class="product-card " data-category="Breads" data-price="70">
+        <img src="menu/bread4.jpeg" alt="Rumali Roti" />
+        <h3>Rumali Roti</h3>
+        <p class="price" data-price="70">₹70</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+      </div>
+
+      <div class="product-card " data-category="Breads" data-price="60">
+        <img src="menu/bread5.jpeg" alt="Tandoori Roti " />
+        <h3>Tandoori Roti </h3>
+        <p class="price" data-price="60">₹60</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+      </div>
+
+      <div class="product-card " data-category="Breads" data-price="75">
+        <img src="menu/bread6.jpeg" alt="Laccha Paratha" />
+        <h3>Laccha Paratha</h3>
+        <p class="price" data-price="75">₹75</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+      </div>
+
+       <div class="product-card " data-category="Desserts" data-price="150">
+        <img src="menu/dessert1.jpeg" alt="Fruit Custard" />
+        <h3>Fruit Custard</h3>
+        <p class="price" data-price="150">₹150</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+      </div>
+
+       <div class="product-card " data-category="Desserts" data-price="175">
+        <img src="menu/dessert2.jpeg" alt="Gajar Halwa" />
+        <h3>Gajar Halwa</h3>
+        <p class="price" data-price="175">₹175</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+      </div>
+
+       <div class="product-card " data-category="Desserts" data-price="120">
+        <img src="menu/dessert3.jpeg" alt="Jalebi Rabdi" />
+        <h3>Jalebi Rabdi</h3>
+        <p class="price" data-price="120">₹120</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+      </div>
+
+       <div class="product-card " data-category="Desserts" data-price="140">
+        <img src="menu/dessert4.jpeg" alt="Moong Dal Halwa" />
+        <h3>Moong Dal Halwa</h3>
+        <p class="price" data-price="140">₹140</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+      </div>
+
+       <div class="product-card " data-category="Desserts" data-price="110">
+        <img src="menu/dessert5.jpeg" alt="Rasmalai" />
+        <h3>Rasmalai</h3>
+        <p class="price" data-price="110">₹110</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+      </div>
+
+       <div class="product-card " data-category="Desserts" data-price="130">
+        <img src="menu/dessert6.jpeg" alt="Gulab Jamun" />
+        <h3>Gulab Jamun</h3>
+        <p class="price" data-price="130">₹130</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+       </div>
+
+        <div class="product-card " data-category="Drinks" data-price="70">
+        <img src="menu/drink1.jpeg" alt="Fruit Punch" />
+        <h3>Fruit Punch</h3>
+        <p class="price" data-price="70">₹70</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+       </div>
+
+       <div class="product-card " data-category="Drinks" data-price="50">
+        <img src="menu/drink2.jpeg" alt="Rose Sharbat" />
+        <h3>Rose Sharbat</h3>
+        <p class="price"data-price="50">₹50</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+       </div>
+
+       <div class="product-card " data-category="Drinks" data-price="50">
+        <img src="menu/drink3.jpeg" alt="Sweet Lassi " />
+        <h3>Sweet Lassi </h3>
+        <p class="price" data-price="50">₹50</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+       </div>
+
+       <div class="product-card " data-category="Drinks" data-price="40">
+        <img src="menu/drink4.jpeg" alt="Masala Chaas" />
+        <h3>Masala Chaas</h3>
+        <p class="price" data-price="40">₹40</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+       </div>
+
+       <div class="product-card " data-category="Drinks" data-price="40">
+        <img src="menu/drink5.jpeg" alt="Jaljeera" />
+        <h3>Jaljeera</h3>
+        <p class="price" data-price="40">₹40</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+
+       </div>
+
+       <div class="product-card " data-category="Drinks" data-price="60">
+        <img src="menu/drink6.jpeg" alt="Virgin Mojito" />
+        <h3>Virgin Mojito</h3>
+        <p class="price" data-price="60">₹60</p>
+        <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart-icon"></i>
+       </div>
+       </div>
+
+       <footer class="site-footer">
+        <p>© 2025 <strong>RasoiSe</strong> — Taste That Tells a Story 🫶</p>
+       </footer>
+
+<script src="product.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RasoiSe | Vendor Portal </title>
+  <link rel="stylesheet" href="portal.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" />
+</head>
+<body>
+
+     <!-- 🔝 Navbar -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="home.html"><i class="bx bx-home"></i> Home</a></li>
+      <li><a href="product.html"><i class="bx bx-food-menu"></i> Products</a></li>
+      <li><a href="package.html"><i class="bx bx-gift"></i> Packages</a></li>
+      <li><a href="cart.html"><i class="bx bx-cart-alt"></i> Cart</a></li>
+      <li><a href="order.html"><i class="bx bx-box"></i> My Orders</a></li>
+      <li><a href="review.html"><i class="bx bx-star"></i> Reviews</a></li>
+      <li><a href="profile.html"><i class="bx bx-user"></i> Profile</a></li>
+      <li><a href="portal.html"><i class="bx bx-id-card"></i> Vendor Portal</a></li>
+      <li><a href="index.html" onclick="logout()"><i class="bx bx-log-out"></i> Logout</a></li>
+    </ul>
+  </nav>
+
+
+  <section class="vendor-portal">
+    <h1 class="vendor-heading">👨‍🍳 Welcome to the RasoiSe Vendor Portal</h1>
+    <p class="vendor-subtext">Partner with us and bring your culinary delights to every celebration!</p>
+
+    <form id="vendorForm" class="vendor-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="text" placeholder="Business Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="tel" placeholder="Phone Number" required />
+      
+      <select required>
+        <option value="">Select Food Category</option>
+        <option value="starter">Starters</option>
+        <option value="main-course">Main Course</option>
+        <option value="dessert">Desserts</option>
+        <option value="drinks">Drinks</option>
+        <option value="breads">Breads</option>
+      </select>
+
+      <input type="file" />
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </section>
+
+  <!-- Toast -->
+  <div id="toast" class="toast-message">🎉 Vendor Request Submitted!</div>
+
+   <footer class="site-footer">
+        <p>© 2025 <strong>RasoiSe</strong> — Taste That Tells a Story 🫶</p>
+       </footer>
+
+ <script src="portal.js"></script>
+</body>
+</html>

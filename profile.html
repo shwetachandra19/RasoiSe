@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RasoiSe | Profile</title>
+    <link rel="stylesheet" href="profile.css" />
+     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css"
+    />
+  </head>
+  <!-- Firebase App (the core Firebase SDK) -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+  <!-- Firebase Authentication -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li>
+          <a href="home.html"><i class="bx bx-home"></i> Home</a>
+        </li>
+        <li>
+          <a href="product.html"><i class="bx bx-food-menu"></i> Products</a>
+        </li>
+        <li>
+          <a href="package.html"><i class="bx bx-gift"></i> Packages</a>
+        </li>
+        <li>
+          <a href="cart.html"><i class="bx bx-cart-alt"></i> Cart</a>
+        </li>
+        <li>
+          <a href="order.html"><i class="bx bx-box"></i> My Orders</a>
+        </li>
+        <li>
+          <a href="review.html"><i class="bx bx-star"></i> Reviews</a>
+        </li>
+        <li>
+          <a href="profile.html"><i class="bx bx-user"></i> Profile</a>
+        </li>
+        <li>
+          <a href="portal.html"><i class="bx bx-id-card"></i> Vendor Portal</a>
+        </li>
+        <li>
+          <a href="index.html" onclick="logout()"
+            ><i class="bx bx-log-out"></i> Logout</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="profile-container">
+      <!-- Sidebar -->
+      <div class="profile-sidebar">
+        <img src="user.jpg" alt="Profile" class="profile-pic" />
+        <h2>
+          👤 Welcome,<br />
+          <span id="userName">Shweta Kashyap</span>
+        </h2>
+        <p>📧 <span id="userEmail">shwetachandra774@gmail.com</span></p>
+
+        <button class="profile-btn" data-action="orders">My Orders</button>
+        <button class="profile-btn" data-action="cart">Cart</button>
+        <button class="profile-btn" data-action="review">Add a Review</button>
+        <button class="profile-btn" data-action="edit">Edit Profile</button>
+        <button class="profile-btn logout-btn" onclick="logout()">
+          🚪 Logout
+        </button>
+      </div>
+
+      <div class="profile-message stacked-right">
+        <div class="heading-block">
+          <h2 class="poem-heading">Your Culinary Chapter</h2>
+          <p class="quote-line">
+            ✨ "A personalized plate makes a memorable meal!" ✨
+          </p>
+        </div>
+
+        <div class="welcome-box" id="welcomePoem">
+          <!-- JS will inject the poem here -->
+          
+        </div>
+         <a href="product.html" class="order-now-btn">🍽️ Order Now</a>
+      </div>
+
+      
+
+      
+
+      <!-- Edit Profile Popup -->
+      <div class="edit-popup" id="editPopup">
+        <div class="edit-form">
+          <h2>Let's Edit ✨</h2>
+          <input type="text" id="editName" placeholder="Your Name" />
+          <input type="email" id="editEmail" placeholder="Your Email" />
+          <button id="saveChangesBtn">Edit</button>
+        </div>
+      </div>
+
+      <!-- Toast -->
+      <div id="toast" class="toast"></div>
+    </div>
+
+    <footer class="site-footer">
+      <p>© 2025 <strong>RasoiSe</strong> — Taste That Tells a Story 🫶</p>
+    </footer>
+
+    <script>
+      // Firebase config
+      var firebaseConfig = {
+        apiKey: "AIzaSyA_6Zi8DFf8LvStIhQTu1ODXUvMkHkSsD4",
+        authDomain: "rasoise-30b63.firebaseapp.com",
+        projectId: "rasoise-30b63",
+        storageBucket: "rasoise-30b63.firebasestorage.app",
+        messagingSenderId: "726867909900",
+        appId: "1:726867909900:web:323a84c0897db4c1653d29",
+        measurementId: "G-XJT4E655TC",
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="profile.js " ></script>
+  </body>
+</html>

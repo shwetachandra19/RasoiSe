@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RasoiSe | Packages</title>
+  <link rel="stylesheet" href="package.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" />
+</head>
+<body>
+
+  <!-- 🔝 Navbar -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="home.html"><i class="bx bx-home"></i> Home</a></li>
+      <li><a href="product.html"><i class="bx bx-food-menu"></i> Products</a></li>
+      <li><a href="package.html"><i class="bx bx-gift"></i> Packages</a></li>
+      <li><a href="cart.html"><i class="bx bx-cart-alt"></i> Cart</a></li>
+      <li><a href="order.html"><i class="bx bx-box"></i> My Orders</a></li>
+      <li><a href="review.html"><i class="bx bx-star"></i> Reviews</a></li>
+      <li><a href="profile.html"><i class="bx bx-user"></i> Profile</a></li>
+      <li><a href="portal.html"><i class="bx bx-id-card"></i> Vendor Portal</a></li>
+      <li><a href="index.html" onclick="logout()"><i class="bx bx-log-out"></i> Logout</a></li>
+    </ul>
+  </nav>
+
+  <section class="event-blocks">
+  <h2>🎉 Events We Cater</h2>
+  <div class="event-grid">
+
+    <div class="event-card" style="background-image: url('package/mehndi.jpg');">
+      <div class="event-info">
+        <h3>🧡 Mehndi</h3>
+        <p class="price" data-price="3999"> ₹3,999</p>
+         <ul class="package-desc">
+          <li>3 Starters</li>
+          <li>3 Main Course</li>
+          <li>2 Desserts</li>
+          <li>Drinks Included</li>
+        </ul>
+        <button class="view-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="event-card" style="background-image: url('package/haldi.jpg');">
+      <div class="event-info">
+        <h3>💛 Haldi</h3>
+        <p class="price" data-price="3499"> ₹3,499</p>
+         <ul class="package-desc">
+          <li>2 Starters</li>
+          <li>2 Main Course</li>
+          <li>1 Dessert</li>
+          <li>Drinks Included</li>
+        </ul>
+        <button class="view-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="event-card" style="background-image: url('package/wedding.jpg');">
+      <div class="event-info">
+        <h3>💍 Shaadi</h3>
+        <p class="price" data-price="12999"> ₹12,999</p>
+         <ul class="package-desc">
+          <li>4 Starters</li>
+          <li>5 Main Course</li>
+          <li>3 Desserts</li>
+          <li>Drinks Included</li>
+        </ul>
+        <button class="view-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="event-card" style="background-image: url('package/reception.jpg');">
+      <div class="event-info">
+        <h3>🎊 Reception</h3>
+        <p class="price" data-price="10999"> ₹10,999</p>
+         <ul class="package-desc">
+          <li>3 Starters</li>
+          <li>4 Main Course</li>
+          <li>2 Desserts</li>
+          <li>Drinks Included</li>
+        </ul>
+        <button class="view-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="event-card" style="background-image: url('package/engagement.jpg');">
+      <div class="event-info">
+        <h3>💐 Engagement</h3>
+        <p class="price" data-price="6999"> ₹6,999</p>
+         <ul class="package-desc">
+          <li>2 Starters</li>
+          <li>2 Main Course</li>
+          <li>1 Dessert</li>
+          <li>No Drinks</li>
+        </ul>
+        <button class="view-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="event-card" style="background-image: url('package/shower.jpg');">
+      <div class="event-info">
+        <h3>👶 Baby Shower</h3>
+        <p class="price" data-price="4999"> ₹4,999</p>
+         <ul class="package-desc">
+          <li>2 Starters</li>
+          <li>2 Main Course</li>
+          <li>2 Desserts</li>
+          <li>Drinks Included</li>
+        </ul>
+        <button class="view-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="event-card" style="background-image: url('package/pre-wedding.jpg');">
+      <div class="event-info">
+        <h3>📸 Pre-Wedding</h3>
+        <p class="price" data-price="5999"> ₹5,999</p>
+         <ul class="package-desc">
+          <li>3 Starters</li>
+          <li>3 Main Course</li>
+          <li>2 Desserts</li>
+          <li>Drinks Included</li>
+        </ul>
+        <button class="view-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="event-card" style="background-image: url('package/cocktail.jpg');">
+      <div class="event-info">
+        <h3>🍸 Cocktail Party</h3>
+        <p class="price" data-price="10999"> ₹10,999</p>
+         <ul class="package-desc">
+          <li>2 Starters</li>
+          <li>2 Main Course</li>
+          <li>1 Dessert</li>
+          <li>🍹 Signature Drinks</li>
+        </ul>
+        <button class="view-btn">Add to Cart</button>
+      </div>
+    </div>
+
+     <div class="event-card" style="background-image: url('package/graduation.jpg');">
+      <div class="event-info">
+        <h3>🎓 Graduation Party</h3>
+        <p class="price" data-price="7499"> ₹7,499</p>
+         <ul class="package-desc">
+          <li>2 Starters</li>
+          <li>2 Main Course</li>
+          <li>1 Dessert</li>
+          <li>Drinks Included</li>
+        </ul>
+        <button class="view-btn">Add to Cart</button>
+      </div>
+    </div>
+
+      <div class="event-card" style="background-image: url('package/birthday.jpg');">
+      <div class="event-info">
+        <h3>🎉 Themed Birthday Bash</h3>
+        <p class="price" data-price="8999"> ₹8,999</p>
+        <ul class="package-desc">
+          <li>2 Starters</li>
+          <li>2 Main Course</li>
+          <li>2 Desserts</li>
+          <li>Drinks Included</li>
+        </ul>
+        <button class="view-btn">Add to Cart</button>
+      </div>
+      </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>© 2025 <strong>RasoiSe</strong> — Taste That Tells a Story 🫶</p>
+</footer>
+
+  <script src="package.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RasoiSe | Your Cart</title>
+  <link rel="stylesheet" href="cart.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" />
+</head>
+<body>
+  <!-- 🔝 Navbar -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="home.html"><i class="bx bx-home"></i> Home</a></li>
+      <li><a href="product.html"><i class="bx bx-food-menu"></i> Products</a></li>
+      <li><a href="package.html"><i class="bx bx-gift"></i> Packages</a></li>
+      <li><a href="cart.html"><i class="bx bx-cart-alt"></i> Cart</a></li>
+      <li><a href="order.html"><i class="bx bx-box"></i> My Orders</a></li>
+      <li><a href="review.html"><i class="bx bx-star"></i> Reviews</a></li>
+      <li><a href="profile.html"><i class="bx bx-user"></i> Profile</a></li>
+      <li><a href="portal.html"><i class="bx bx-id-card"></i> Vendor Portal</a></li>
+      <li><a href="index.html" onclick="logout()"><i class="bx bx-log-out"></i> Logout</a></li>
+    </ul>
+  </nav>
+
+  <section class="cart-section">
+    <h1 class="cart-heading">🛍️ Your Delicious Selections</h1>
+
+    <div id="cartItems" class="cart-items-container">
+      <!-- Items or default empty state will go here -->
+      <div class="empty-cart-box">
+        <p class="empty-cart">🛒 No items added yet!</p>
+        <div class="cart-links">
+          <a href="product.html" class="cart-btn">🍽️ Explore Menu</a>
+          <a href="packages.html" class="cart-btn">🎉 Browse Packages</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="totalSection" class="total-section">
+      <h3>Total: <span id="totalPrice">₹0</span></h3>
+      <a id="placeOrderBtn" href="order.html" class="place-order-btn" style="display: none;">
+      ✅ Continue to Order
+    </div>
+  </section>
+
+   <footer class="site-footer">
+        <p>© 2025 <strong>RasoiSe</strong> — Taste That Tells a Story 🫶</p>
+       </footer>
+
+  <script src="cart.js"></script>
+</body>
+</html>

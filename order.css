@@ -1,0 +1,241 @@
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #f3f7f1, #e6f4ea);
+  color: #333;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 12px 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f4f4f4;
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active-link {
+  color: #facc6b;
+  font-weight: 500;
+}
+
+/* Heading */
+.order-heading {
+   margin-top: 8rem; 
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1b5e20;
+}
+
+/* Order Items */
+.order-items-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.order-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.order-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.order-card h3 {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.order-card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Total Amount */
+.total-order-amount {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+/* Order Form */
+.order-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+.order-form h2 {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #33691e;
+}
+
+.order-form input,
+.order-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.order-form button {
+  width: 100%;
+  padding: 12px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.order-form button:hover {
+  background: #388e3c;
+}
+
+/* Thank You Box */
+.thank-you-box {
+  margin-top: 30px;
+  text-align: center;
+  background-color: #dcedc8;
+  padding: 25px;
+  border-radius: 12px;
+  animation: fadeIn 0.5s ease;
+}
+
+.thank-you-box h2 {
+  font-size: 1.8rem;
+  color: #33691e;
+  margin-bottom: 10px;
+}
+
+.thank-you-box p {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Toast Message */
+.toast-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.toast-message.show {
+  opacity: 1;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 18px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  font-size: 0.95rem;
+  color: #2e4e37;
+  box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+
+    .navbar {
+    left: 0;
+    height: auto;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 14px;
+    justify-content: flex-start;
+    padding: 6px 10px;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+
+  .nav-links a {
+    font-size: 0.95rem;
+    white-space: nowrap;
+  }
+
+  .order-heading {
+    font-size: 1.5rem;
+  }
+
+  .order-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .order-card img {
+    width: 100%;
+    height: auto;
+  }
+}
